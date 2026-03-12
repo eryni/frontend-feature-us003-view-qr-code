@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>My QR Code</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" class="ion-padding ion-text-center">
+  <div class="qr-card">
+    <div class="card-header">
+      <p class="header-text">My QR Code</p>
+      <div class="logo-container">
+        <img src="assets/qr_logo_black/qr-logo-black.png" alt="Capataz Logo" class="brand-logo">
+      </div>
+    </div>
+
+    <div class="qr-wrapper">
+      <qrcode 
+        [qrdata]="myQrCodeData" 
+        [width]="220" 
+        [errorCorrectionLevel]="'M'"
+        [elementType]="'canvas'"
+        [margin]="2">
+      </qrcode>
+    </div>
+
+    <div class="card-footer">
+      <h2 class="user-name">JUAN DELA D. CRUZ</h2>
+      <p class="account-number">****** 2321</p>
+      <p class="disclaimer">Transfer fees may apply</p>
+    </div>
+  </div>
+</ion-content>

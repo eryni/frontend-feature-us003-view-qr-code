@@ -1,0 +1,7 @@
+{
+  "name": "ewallet-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

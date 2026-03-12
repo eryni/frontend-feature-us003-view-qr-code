@@ -1,0 +1,64 @@
+// Variables based on 8px grid
+$base-unit: 8px;
+
+.qr-card {
+  background: #4a4a4a;
+  border-radius: 5.5px;
+  padding: 2rem; // 32px
+  margin: 1.5rem auto; // 24px
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+  .card-header {
+    margin-bottom: 1.5rem;
+    
+    .header-text {
+      color: #e0e0e0;
+      font-size: 1rem;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      
+      .brand-name {
+        color: white;
+        font-weight: bold;
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .qr-wrapper {
+    background: white;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-footer {
+    color: #e0e0e0;
+
+    .user-name {
+      margin: 0;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    .account-number {
+      margin: 0.25rem 0 1.5rem 0;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .disclaimer {
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+  }
+}
